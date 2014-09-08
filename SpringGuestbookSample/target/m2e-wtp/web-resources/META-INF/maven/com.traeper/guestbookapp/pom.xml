@@ -121,6 +121,16 @@
 			<artifactId>cubrid-jdbc</artifactId>
 			<version>8.4.1.2032</version>
 		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.4</version>
+		</dependency>
 	</dependencies>
 
 	<repositories>
