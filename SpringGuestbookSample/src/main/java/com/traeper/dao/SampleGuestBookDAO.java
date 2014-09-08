@@ -13,8 +13,9 @@ public class SampleGuestBookDAO implements GuestBookDAO {
 	private final Logger logger = LoggerFactory.getLogger(getClass());
 	
 	@Override
-	public void create(GuestBookVO guestBookVO) {
+	public int create(GuestBookVO guestBookVO) {
 		logger.debug("SampleGuestBookDAO create!!");
+		return -1;
 	}
 
 	@Override
@@ -33,7 +34,7 @@ public class SampleGuestBookDAO implements GuestBookDAO {
 	}
 
 	@Override
-	public void delete(int guestBookId) {
+	public void delete(String guestBookId) {
 		logger.debug("SampleGuestBookDAO delete!!");
 	}
 
