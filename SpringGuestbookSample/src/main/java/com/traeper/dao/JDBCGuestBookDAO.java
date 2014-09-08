@@ -8,8 +8,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.traeper.vo.GuestBookVO;
 
+@Service
 public class JDBCGuestBookDAO implements GuestBookDAO {
 
 	private PreparedStatement getPreparedStatement(final String sql)  {
