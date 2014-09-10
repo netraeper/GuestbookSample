@@ -13,7 +13,7 @@
 	<table border="1">
 		<c:forEach var="result" items="${guestbooks}" varStatus="status">
 			<tr>
-				<td align="left"><c:out value="${result.guestBookId}" /></td>
+				<td align="left"><c:out value="${result.guestbookId}" /></td>
 				<td align="center"><c:out value="${result.title}" /></td>
 				<td align="center"><c:out value="${result.content}" /></td>
 				<td align="center"><c:out value="${result.registerDate}" /></td>

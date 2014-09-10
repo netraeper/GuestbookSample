@@ -9,8 +9,8 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.traeper.dao.JDBCGuestBookDAO;
-import com.traeper.vo.GuestBookVO;
+import com.traeper.guestbookapp.dao.JDBCGuestBookDAO;
+import com.traeper.guestbookapp.vo.GuestBookVO;
 
 public class JDBCGuestBookDAOTest {
 	final Logger logger = LoggerFactory.getLogger(getClass());
@@ -25,8 +25,9 @@ public class JDBCGuestBookDAOTest {
 	@Test 
 	public void crudTest() {
 		retrieve();
-		create();
-		update();
+//		create();
+//		update();
+//		delete();
 		retrieve();
 	}
 	

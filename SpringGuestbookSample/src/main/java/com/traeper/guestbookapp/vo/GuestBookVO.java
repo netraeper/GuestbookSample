@@ -1,4 +1,4 @@
-package com.traeper.vo;
+package com.traeper.guestbookapp.vo;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
 
@@ -7,16 +7,17 @@ import org.apache.commons.lang.builder.ToStringBuilder;
  * @author traeper
  */
 public class GuestBookVO {
-	private String guestBookId;
+	private String guestbookId;
 	private String title;
 	private String content;
 	private String registerDate;
 	private String password;
-	public String getGuestBookId() {
-		return guestBookId;
+	
+	public String getGuestbookId() {
+		return guestbookId;
 	}
-	public void setGuestBookId(String guestBookId) {
-		this.guestBookId = guestBookId;
+	public void setGuestbookId(String guestbookId) {
+		this.guestbookId = guestbookId;
 	}
 	public String getTitle() {
 		return title;
@@ -49,7 +50,7 @@ public class GuestBookVO {
 	
 	public GuestBookVO(String guestBookId, String title, String content,
 			String registerDate, String password) {
-		this.guestBookId = guestBookId;
+		this.guestbookId = guestBookId;
 		this.title = title;
 		this.content = content;
 		this.registerDate = registerDate;

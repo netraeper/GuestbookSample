@@ -1,4 +1,4 @@
-package com.traeper.dao;
+package com.traeper.guestbookapp.dao;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,16 +6,16 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.traeper.vo.GuestBookVO;
+import com.traeper.guestbookapp.vo.GuestBookVO;
 
 public class SampleGuestBookDAO implements GuestBookDAO {
 
 	private final Logger logger = LoggerFactory.getLogger(getClass());
 	
 	@Override
-	public int create(GuestBookVO guestBookVO) {
+	public String create(GuestBookVO guestBookVO) {
 		logger.debug("SampleGuestBookDAO create!!");
-		return -1;
+		return null;
 	}
 
 	@Override

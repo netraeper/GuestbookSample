@@ -4,7 +4,7 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
-import com.traeper.vo.GuestBookVO;
+import com.traeper.guestbookapp.vo.GuestBookVO;
 
 public class GuestBookVOTest {
 	

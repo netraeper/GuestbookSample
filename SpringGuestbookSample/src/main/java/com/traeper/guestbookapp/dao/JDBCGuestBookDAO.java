@@ -1,4 +1,4 @@
-package com.traeper.dao;
+package com.traeper.guestbookapp.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,9 +10,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.traeper.vo.GuestBookVO;
+import com.traeper.guestbookapp.vo.GuestBookVO;
 
-@Service
 public class JDBCGuestBookDAO implements GuestBookDAO {
 
 	private PreparedStatement getPreparedStatement(final String sql)  {
@@ -32,12 +31,12 @@ public class JDBCGuestBookDAO implements GuestBookDAO {
 	}
 	
 	@Override
-	public int create(GuestBookVO guestBookVO) {
+	public String create(GuestBookVO guestBookVO) {
 		PreparedStatement ps = getPreparedStatement(
 				"INSERT INTO guestbook ( title, content, register_date, password ) "
 				+ "VALUES ( ?, ?, now(), ? )");
 		if(ps == null) {
-			return -1;
+			return null;
 		}
 		
 		try {
@@ -55,7 +54,7 @@ public class JDBCGuestBookDAO implements GuestBookDAO {
 			}
 		}
 		
-		return -1;
+		return null;
 	}
 
 	@Override
@@ -109,7 +108,7 @@ public class JDBCGuestBookDAO implements GuestBookDAO {
 			ps.setString(1, guestBookVO.getTitle());
 			ps.setString(2, guestBookVO.getContent());
 			ps.setString(3, guestBookVO.getPassword());
-			ps.setString(4, guestBookVO.getGuestBookId());
+			ps.setString(4, guestBookVO.getGuestbookId());
 			ps.execute();
 		} catch (SQLException e) {
 			e.printStackTrace();
