@@ -36,4 +36,9 @@ public class MybatisGuestBookDAO implements GuestBookDAO {
 		sqlSession.delete("deleteGuestbook", guestBookId);
 	}
 
+	@Override
+	public GuestBookVO getGuestbook(String guestbookId) {
+		return sqlSession.selectOne("getGuestbook", guestbookId);
+	}
+
 }

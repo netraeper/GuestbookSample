@@ -7,6 +7,8 @@
 <head>
 <title>Home</title>
 </head>
+
+
 <body>
 	<h1>Hello Simple GuestBook world!!</h1>
 
@@ -17,6 +19,8 @@
 				<td align="center"><c:out value="${result.title}" /></td>
 				<td align="center"><c:out value="${result.content}" /></td>
 				<td align="center"><c:out value="${result.registerDate}" /></td>
+				<!-- update 버튼  -->
+				<td align="center"> <input type="button" onclick="update('${result.password}')" value="update"> </td>
 			</tr>
 		</c:forEach>
 	</table>
@@ -33,6 +37,15 @@
 		</p>
 		<input type="submit">
 	</form>
+
+	<script>
+		function update(password) {
+			
+			
+			
+		}
+	
+	</script>
 
 </body>
 </html>

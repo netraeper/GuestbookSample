@@ -17,7 +17,7 @@
 		guestbook
 	</select>
 
-	<select id="getGuestbook" parameterType="Integer" resultMap="GuestBookVOResult">
+	<select id="getGuestbook" parameterType="String" resultMap="GuestBookVOResult">
 		SELECT
 		guestbook_id, title, content, register_date, password
 		FROM

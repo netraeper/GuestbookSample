@@ -143,4 +143,9 @@ public class JDBCGuestBookDAO implements GuestBookDAO {
 		}
 	}
 
+	@Override
+	public GuestBookVO getGuestbook(String guestbookId) {
+		throw new UnsupportedOperationException();
+	}
+
 }

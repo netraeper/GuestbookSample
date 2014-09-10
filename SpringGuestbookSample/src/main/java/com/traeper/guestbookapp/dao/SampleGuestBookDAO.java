@@ -38,4 +38,10 @@ public class SampleGuestBookDAO implements GuestBookDAO {
 		logger.debug("SampleGuestBookDAO delete!!");
 	}
 
+	@Override
+	public GuestBookVO getGuestbook(String guestbookId) {
+		logger.debug("SampleGuestBookDAO getGuestbook!!");
+		return null;
+	}
+
 }
