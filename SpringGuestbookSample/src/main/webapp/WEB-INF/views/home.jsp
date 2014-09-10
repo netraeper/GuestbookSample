@@ -20,7 +20,7 @@
 				<td align="center"><c:out value="${result.content}" /></td>
 				<td align="center"><c:out value="${result.registerDate}" /></td>
 				<!-- update 버튼  -->
-				<td align="center"> <input type="button" onclick="update('${result.password}')" value="update"> </td>
+				<td align="center"> <a href="/update/${result.guestbookId}"> update</a> </td>
 			</tr>
 		</c:forEach>
 	</table>
@@ -38,14 +38,6 @@
 		<input type="submit">
 	</form>
 
-	<script>
-		function update(password) {
-			
-			
-			
-		}
-	
-	</script>
 
 </body>
 </html>

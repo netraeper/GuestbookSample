@@ -41,7 +41,7 @@ public class UpdateController {
 		return mv;
 	}
 		
-	@RequestMapping(value = "/updateRequest", method = RequestMethod.GET)
+	@RequestMapping(value = "/updateRequest", method = RequestMethod.POST)
 	public void updateRequest(@ModelAttribute GuestBookVO guestBookVO, HttpServletRequest request, HttpServletResponse response) throws IOException {
 		request.setCharacterEncoding("utf-8");
 		logger.info(guestBookVO.toString());

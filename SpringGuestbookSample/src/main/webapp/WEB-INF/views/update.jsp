@@ -5,12 +5,13 @@
 <%@ page session="false"%>
 <html>
 <head>
-<title>update</title>
+<title>update</title> 
 </head>
 <body>
 	<h1>Hello Simple GuestBook world!!</h1>
 
 	<form action="/updateRequest" method="post">
+		<input name="guestbookId" type="hidden" value="${guestbook.guestbookId}">
 		<p>
 			제목 : <input name="title" type="text" value="${guestbook.title}">
 		</p>
